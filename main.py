@@ -65,6 +65,7 @@ def move_log_files(log_dir):
        shutil.move(source, destination)
 
 # Call functions.
-target_dir = create_log_dir(args.filename)
-read_files(timestamp)
-move_log_files(target_dir)
+if __name__ == "__main__":
+    target_dir = create_log_dir(args.filename)
+    read_files(timestamp)
+    move_log_files(target_dir)
